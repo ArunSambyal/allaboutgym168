@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Bahnschrift", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -471,7 +471,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Bahnschrift", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
@@ -556,7 +556,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #5c8eb0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Bahnschrift", sans-serif;
 }
 
 .section-title h2::after {
@@ -574,7 +574,7 @@ section {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Bahnschrift", sans-serif;
   color: #263d4d;
 }
 
@@ -611,7 +611,7 @@ section {
 .about .count-box p {
   padding: 5px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Bahnschrift", sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: #2e4b5e;
@@ -623,7 +623,7 @@ section {
   margin-top: 20px;
   color: #2e4b5e;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Bahnschrift", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -1542,7 +1542,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Bahnschrift", sans-serif;
   color: #fff;
 }
 
