@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Allaboutgym168</title>
+  <title>AllAboutGym168</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -44,7 +44,7 @@
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
-      z-index: 8; /* Ensure the overlay appears below the modal */
+      z-index: 8;
   }
 
   /* Style the modal overlay */
@@ -65,16 +65,22 @@
 
   /* Style the modal content */
   .modal-content {
-      background: rgb(189, 189, 189);
-      padding: 20px;
-      border-radius: 5px;
-      text-align: center;
-      animation: slideIn 0.3s ease-in-out;
-      max-width: 100%;
-      width: 100%;
-      box-sizing: border-box;
-  }
+    cursor: pointer;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    animation: slideIn 0.3s ease-in-out;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px 5px  rgba(0, 0, 0, 0.212)
+}
 
+.icon-box a,
+  .close-btn {
+    cursor: pointer;
+  }
   @keyframes slideIn {
       from {
           transform: translateY(-50px);
@@ -455,7 +461,7 @@
   <div class="container" data-aos="fade-up">
   <div class="modal-content" >
     <h2>Project Feasibility Reports</h2>
-    <p>If you are still planning to open a gym and seeking for expert advice;<br> Please reach us for a non-obligation detailed report on project feasibility and help us contribute in your success story!</p>
+    <p>If you are still planning to open a gym and seeking for expert advice; <br> Please reach us for a non-obligation detailed report on project feasibility and help us contribute in your success story!</p>
     <button class="close-btn" onclick="closeModal('project-feas')">Close</button>
   </div>
 </div>
@@ -584,11 +590,11 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <!-- <div class="my-3">
+              <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div> -->
+              </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
