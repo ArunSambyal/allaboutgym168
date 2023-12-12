@@ -80,9 +80,7 @@
 hr.hr-primary {
     border-top-color: #CC164D!important;
 }
-em {
-    font-style: italic;
-}
+
 .font-weight-normal {
     font-weight: 400 !important;
 }
@@ -90,6 +88,9 @@ em {
   background-color:#eee;
 }
 
+.read-more-btn {
+            cursor: pointer;
+        }
 </style>
 
 <body>
@@ -176,13 +177,19 @@ em {
               Manrritpaul Singh Ubhi
             </h3>
             <h5 class="my-0 font-weight-normal">
-              <em>Chief Executive Officer</em>
+              <p>Founder</p>
             </h5>
             <hr class="hr-primary w-70 ml-0 ml-md-auto mr-md-0 mb-3">
-            <p>15+ years’ experience as a Business Consultant for Gym/ Health Club Management</p>
-            <p>Partner at Rhino’s Gym India; a recognized gym chain having PAN India locations via franchise network successfully operating in Delhi, Maharashtra, Gujarat, Punjab, Uttar Pradesh, J&K, and Jharkhand.</p>
-            <a class="read-more-btn" style="cursor: pointer;" onclick="toggleDetails('manrritpaulDetails')" data-toggle="scroll-link" class="text-sm font-weight-bold"><i class="fa fa-chevron-right text-xs text-pink"></i> Read More</a>
-            <div id="manrritpaulDetails" style="display: none;">
+            <ul>
+              <li>15+ years’ experience as a Business Consultant for Gym/ Health Club Management</li>
+              <li>Partner at Rhino’s Gym India; a recognized gym chain having PAN India locations via franchise network successfully operating in Delhi, Maharashtra, Gujarat, Punjab, Uttar Pradesh, J&K, and Jharkhand.</li>
+             
+            </ul>
+           <a id="readMoreBtn1" class="read-more-btn" onclick="toggleDetails('manrritpaulDetails', 'readMoreBtn1')" data-toggle="scroll-link" class="text-sm font-weight-bold">
+              <i class="fa fa-chevron-right text-xs text-pink"></i>
+              <span id="readMoreText1">Read More</span>
+          </a>
+                      <div id="manrritpaulDetails" style="display: none;">
               <ul>
                 <li>Graduate in Architecture.</li>
                 <li>Having skills in cost metric gym designing</li>
@@ -207,13 +214,19 @@ em {
                   Amreen Chadha
               </h3>
               <h5 class="my-0 font-weight-normal">
-                  <em>Associate Consultant</em>
+                  <p>Associate Consultant</p>
             </h5>
             <hr class="hr-primary w-70 ml-0 mb-3">
-            <p>Exercise Science Expert (Women’s Health Specialist)</p>
-            <p>Founder- The Women’s Course (A comprehensive and scientifically backed information on Women’s health and fitness)</p>
-            <a class="read-more-btn" style="cursor: pointer;" onclick="toggleDetails('amreenDetails')" data-toggle="scroll-link" class="text-sm font-weight-bold"><i class="fa fa-chevron-right text-xs text-pink"></i> Read More</a>
-            <div id="amreenDetails" style="display: none;">
+            <ul>
+              <li>Exercise Science Expert (Women’s Health Specialist)</li>
+              <li>Founder- The Women’s Course (A comprehensive and scientifically backed information on Women’s health and fitness)</li>
+            </ul>
+         
+            <a id="readMoreBtn2" class="read-more-btn" onclick="toggleDetails('amreenDetails' ,'readMoreBtn2')" data-toggle="scroll-link" class="text-sm font-weight-bold">
+              <i class="fa fa-chevron-right text-xs text-pink"></i>
+              <span id="readMoreText2">Read More</span>
+          </a>
+                      <div id="amreenDetails" style="display: none;">
               <ul>
                 <li>Certified in Food Science & Nutrition</li>
                 <li>Resistance Training Specialist from RTS Global</li> 
@@ -701,9 +714,17 @@ em {
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
   <script>
-    function toggleDetails(id) {
-      var details = document.getElementById(id);
-      details.style.display = details.style.display === 'none' ? 'block' : 'none';
+     function toggleDetails(id, buttonId) {
+        var details = document.getElementById(id);
+        var readMoreTextElement = document.getElementById(buttonId);
+
+        if (details.style.display === 'none' || details.style.display === '') {
+            details.style.display = 'block';
+            readMoreTextElement.innerHTML = 'Read Less';
+        } else {
+            details.style.display = 'none';
+            readMoreTextElement.innerHTML = 'Read More';
+        }
     }
   </script>
   <!-- Vendor JS Files -->
